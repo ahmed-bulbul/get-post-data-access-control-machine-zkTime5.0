@@ -13,20 +13,23 @@ public class DbConnection {
 
     }
 
-    // thread function to get event records from ucanaccess db
+    // thread function
     public static Thread t = new Thread(new Runnable() {
         @Override
         public void run() {
             try {
                 while (true) {
-                    Thread.sleep(60000);
-                    GetEventRecords.getEventRecordList();
+                    Thread.sleep(6000);
+                    System.out.println("Thread is running");
+                    PostEventRecords.sendEventRecordList(GetEventRecords.getEventRecordList());
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
     });
+
+
 
     public static void getConnection() {
 
