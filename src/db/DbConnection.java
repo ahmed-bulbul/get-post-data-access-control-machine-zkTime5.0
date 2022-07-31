@@ -18,13 +18,25 @@ public class DbConnection {
         // TODO Auto-generated method stub
         getConnection();
 
-        // print eventRecordList data
-        sendEventRecordList(getEventRecordList());
+        //send  record  every 10 minutes to server
+        Thread t = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    while (true) {
+                        Thread.sleep(6000);
+                        sendEventRecordList(getEventRecordList());
+                    }
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        t.start();
 
 
 
-        //call api
-      //  sendEventRecordList(eventRecord());
+
 
     }
 
