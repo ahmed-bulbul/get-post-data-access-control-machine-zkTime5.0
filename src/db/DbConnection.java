@@ -19,8 +19,10 @@ public class DbConnection {
         public void run() {
             try {
                 while (true) {
-                    Thread.sleep(6000);
+                    // 5 minutes every time
+                    Thread.sleep(300000);
                     System.out.println("Thread is running");
+                    //if connection refuse 3 times, break the loop
                     PostEventRecords.sendEventRecordList(GetEventRecords.getEventRecordList());
                 }
             } catch (InterruptedException e) {
