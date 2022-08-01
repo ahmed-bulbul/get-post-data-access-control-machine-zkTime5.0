@@ -10,7 +10,7 @@ public class PostEventRecords {
     public static void sendEventRecordList(List<String> eventRecordList) {
 
 
-        String targetURL = "http://192.168.134.88:9001/hrms_api/test/create";
+        String targetURL = "http://192.168.134.88:5555/api/v1/machineData/create";
         String json = "";
 
         //add org and  operating unit to json
@@ -60,6 +60,7 @@ public class PostEventRecords {
             rd.close();
         } catch (ConnectException e) {
             System.out.printf("Exception: %s%n", e);
+            System.out.println("\n");
         } catch (IOException e) {
             e.printStackTrace();
         }

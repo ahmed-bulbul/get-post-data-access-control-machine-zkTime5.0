@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AtnMachineData:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AtnMachineData_jar</output-path>
+    <root id="archive" name="AtnMachineData.jar">
+      <element id="module-output" name="AtnMachineData" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/sf/ucanaccess/ucanaccess/5.0.0/ucanaccess-5.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/hsqldb/hsqldb/2.5.0/hsqldb-2.5.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/healthmarketscience/jackcess/jackcess/3.0.1/jackcess-3.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
